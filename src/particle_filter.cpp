@@ -16,10 +16,6 @@ using namespace std;
 static default_random_engine gen;
 
 void ParticleFilter::init(double x, double y, double theta, double std[]) {
-	// TODO: Set the number of particles. Initialize all particles to first position (based on estimates of 
-	//   x, y, theta and their uncertainties from GPS) and all weights to 1. 
-	// Add random Gaussian noise to each particle.
-	// NOTE: Consult particle_filter.h for more information about this method (and others in this file).
 	num_particles = 1000;	
 
 	normal_distribution<double> dist_x(0, std[0]);
